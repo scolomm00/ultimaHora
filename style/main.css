@@ -3,7 +3,7 @@
 ======================*/
 
 header{
-   
+    
 }
 
 main{
@@ -81,6 +81,10 @@ main{
     width: 22%;
 }
 
+.header .header-menu{
+    display: inline;
+}
+
 /*====================
 ======Typography======
 ======================*/
@@ -97,7 +101,7 @@ h5, h6 {
     font-family: "Roboto Condensed";
 }
 
-a, td, p, button, span{
+a, td, p, button, span, li{
     font-family: "Roboto";
     text-decoration: none;
 }
@@ -110,3 +114,222 @@ a, td, p, button, span{
 img {
     max-width: 100%;
 }
+
+/*====================
+=======Header=========
+======================*/
+
+.header-news{
+    background-color: rgb(211, 210, 210);
+    padding: 0.5rem 5%;
+    width: 90%;
+}
+
+.header-news-today{
+    width: 85%;
+}
+
+.header-news-today ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-news-today ul li{
+    font-size: 0.8rem;
+}
+
+.header-news-today ul li:first-child{
+    color: hsl(0, 100%, 40%);
+    font-weight: 600;
+}
+
+.header-news-today ul li:not(:first-child):not(:last-child)::after {
+    padding-left: 0.25rem;
+    content: "-";
+}
+
+.header-news-editorial{
+    margin-left: auto;
+    width: 50%
+}
+
+.header-news-editorial ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-news-editorial ul li{
+    font-size: 0.7rem;
+}
+
+.header-news-editorial ul li:not(:last-child)::after {
+    content: "|";
+    padding-left: 0.5rem;
+    color: hsl(0, 0%, 67%);
+    font-weight: 600;
+}
+
+.header-main{
+    background-color: hsl(0, 100%, 50%);
+    padding: 1rem 5%;
+    width: 90%;
+}
+
+.header-main-menu svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.header-main-menu svg path{
+    fill:hsl(0, 0%, 100%)
+}
+
+.header-main-logo svg{
+    width: 15rem;
+}
+
+.header-main-logo svg path{
+    fill:hsl(0, 0%, 100%)
+}
+
+.header-main-user{
+    margin-left: auto;
+    width: 70%;
+}
+
+.header-main-user-login svg{
+    width: 1rem;
+    height: 1rem;
+}
+
+.header-main-user-login button{
+    padding: 0.4rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+
+.header-main-user-sign-in button{
+    background-color: hsl(47, 100%, 50%);
+    border-radius: 5px;
+    padding: 0.4rem;
+}
+
+.header-menu{
+    background-color: rgb(211, 210, 210);
+    padding: 0.5rem 5%;
+    width: 90%;
+}
+
+.header-menu ul li{
+    display: inline;
+    
+}
+
+.header-menu ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.header-menu ul li svg{
+    width: 1rem;
+    height: 1rem;
+}
+
+
+/*====================
+=======Banners========
+======================*/
+
+.banner{
+    width: 100%;
+}
+
+/*BANNER INFERIOR*/
+.banner.sticky{
+    position: sticky;
+    top: 0;
+}
+
+/*====================
+========News==========
+======================*/
+
+.news{
+    padding: 0.5rem 5%;
+}
+
+.news-image{
+
+}
+
+.news-category{
+    color: red;
+    font-size: 0.8rem;
+}
+
+.news-title{
+    
+}
+
+.news-content{
+   
+}
+
+.news-author span{
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 23%);
+}
+
+.news-feature{
+    background-color: rgb(46, 45, 45);
+    margin-left: 1rem;
+}
+
+.news-feature-image{
+    width: 100%;
+}
+
+.news-feature-category span{
+    font-size: 0.8rem;
+    color: rgb(136, 132, 132);
+    padding: 0.5rem;
+}
+
+.news-feature-title h3{
+    color: white;
+    padding: 0.5rem;
+}
+
+.news-feature-author {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.news-feature-world{
+    background-color: red;
+}
+
+.news-feature-world-image{
+
+}
+
+.news-feature-world-category span{
+    color: rgb(161, 148, 148);
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.news-feature-world-title h4{
+    color: white;
+    padding: 0.5rem;
+}
+
+.news-feature-world-author span{
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+
