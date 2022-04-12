@@ -207,6 +207,7 @@ img {
 .header-main-user{
     margin-left: auto;
     width: 70%;
+    margin-top: 0.7rem;
     
 }
 
@@ -220,6 +221,7 @@ img {
     margin-right: 1rem;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
 }
 
 .header-main-user-sign-in button{
@@ -228,6 +230,7 @@ img {
     padding: 0.4rem;
     cursor: pointer;
     font-style: italic;
+    border: none;
 }
 
 .header-menu{
