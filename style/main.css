@@ -2,12 +2,9 @@
 =======Structure======
 ======================*/
 
-header{
-    
-}
-
 main{
-   
+    margin: 0 auto;
+    width: 90%;
 }
 
 /*====================
@@ -46,6 +43,7 @@ main{
     width: 65%;
 }
 
+
 .desktop-two-columns-inline{
     display: flex;
     justify-content: space-between;
@@ -81,8 +79,9 @@ main{
     width: 22%;
 }
 
-.header .header-menu{
-    display: inline;
+
+.desktop-two-columns-aside {
+    margin-top: 1rem;
 }
 
 /*====================
@@ -120,7 +119,7 @@ img {
 ======================*/
 
 .header-news{
-    background-color: rgb(211, 210, 210);
+    background-color: hsl(0, 1%, 83%);
     padding: 0.5rem 5%;
     width: 90%;
 }
@@ -175,14 +174,9 @@ img {
 }
 
 .header-main{
-    background-color: #cd0000;
+    background-color: hsl(0, 100%, 40%);
     padding: 1.5rem 5%;
     width: 90%;
-}
-
-.header-main.sticky{
-    position: sticky;
-    top: 0;
 }
 
 .header-main-menu svg{
@@ -196,7 +190,7 @@ img {
 }
 
 .header-main-logo svg{
-    width: 19rem;
+    width: 20rem;
     cursor: pointer;
 }
 
@@ -206,42 +200,52 @@ img {
 
 .header-main-user{
     margin-left: auto;
-    width: 70%;
+    width: 65%;
     margin-top: 0.7rem;
-    
-}
-
-.header-main-user-login svg{
-    width: 1.1rem;
-    height: 1.1rem;
 }
 
 .header-main-user-login button{
-    padding: 0.4rem;
-    margin-right: 1rem;
-    border-radius: 5px;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
     cursor: pointer;
     border: none;
+    font-size: 0.9rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.header-main-user-login button svg{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.header-main-user-login button{
+
+
 }
 
 .header-main-user-sign-in button{
-    background-color: #ffc700;
-    border-radius: 5px;
-    padding: 0.4rem;
+    background-color: hsl(47, 100%, 50%);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
     cursor: pointer;
     font-style: italic;
     border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Times New Roman",Times,serif;
 }
+
+.header .header-menu{
+    display: inline;
+}
+
 
 .header-menu{
-    background-color: rgb(211, 210, 210);
+    background-color: hsl(0, 1%, 83%);
     padding: 0.5rem 5%;
     width: 90%;
-}
-
-.header-menu ul li{
-    display: inline;
-    cursor: pointer;    
 }
 
 .header-menu ul{
@@ -250,21 +254,31 @@ img {
     font-size: 1rem;
 }
 
-.header-menu ul li svg{
-    width: 1rem;
-    height: 1rem;
+.header-menu ul li{
+    display: inline;
+    cursor: pointer;
+    font-family: "Roboto Condensed";
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
 }
 
+.header-menu ul li svg{
+    width: 1.3rem;
+    height: 1.3rem;
+}
 
 /*====================
 =======Banners========
 ======================*/
 
 .banner{
-    width: 85%;
     cursor: pointer;
-    padding-left: 3rem;
-    margin-top: 1rem;
+    margin: 1rem auto;
+    width: max-content;
 }
 
 .banner.sticky{
@@ -277,124 +291,125 @@ img {
 ======================*/
 
 .news{
-    padding: 0.5rem 5%;
+    margin-bottom: 1rem;
 }
 
 .news-image{
     cursor: pointer;
 }
 
-.news-category{
-    color: red;
+.news-category span{
+    color: hsl(0, 100%, 40%);
     font-size: 0.8rem;
+    font-weight: 600;
     cursor: pointer;
+}
+
+.news-title{
+    margin: 0.5rem 0;
 }
 
 .news-title:hover{
     cursor: pointer;
 }
 
-.news-title h1:hover{
-    color: red;
-}
-
-.news-title h3:hover{
-    color: red;
-}
-
+.news-title h1:hover,
+.news-title h3:hover,
 .news-title h4:hover{
-    color: red;
+    color: hsl(0, 100%, 40%);
 }
 
-.news-title h3{
-    margin-right: 2rem;
-}
-
-.news-content{
-   
+.news-author{
+    margin: 0.2rem 0;
 }
 
 .news-author span{
-    font-size: 0.8rem;
     color: hsl(0, 0%, 23%);
     cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .news-other h4:hover{
     cursor: pointer;
-    color: red;
+    color: hsl(0, 100%, 50%);
 }
 
 .news-other h4:first-child::before{
-    content: "* ";
-    color: red;
-}
-
-.news-feature{
-    background-color: rgb(46, 45, 45);
-    margin-left: 2.7rem;
-}
-
-.news-feature-image{
-    width: 100%;
-    cursor: pointer;
-}
-
-.news-feature-category span{
-    font-size: 0.8rem;
-    color: rgb(136, 132, 132);
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-.news-feature-title h3{
-    color: white;
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-.news-feature-title h3:hover{
-    color: hsl(0, 3%, 66%);
-}
-
-.news-feature-author {
-    padding: 0.5rem;
-    font-size: 0.8rem;
-    color: white;
-    cursor: pointer;
-}
-
-.news-feature-world{
-    background-color: #cd0000;
+    content: "■";
+    color: hsl(0, 100%, 50%);
     margin-right: 0.5rem;
 }
 
-.news-feature-world-image{
-    cursor: pointer;
+
+
+.news.black{
+    background-color: hsl(0, 1%, 18%);
 }
 
-.news-feature-world-category span{
-    color: rgb(161, 148, 148);
-    padding: 0.5rem;
+.news.black .news-category{
+    padding: 0 0.5rem;
+}
+
+.news.black .news-category span{
     font-size: 0.8rem;
+    color: hsl(0, 2%, 53%);
     cursor: pointer;
 }
 
-.news-feature-world-title h4{
-    color: white;
-    padding: 0.5rem;
+.news.black .news-title{
+    padding: 0 0.5rem;
+}
+
+.news.black .news-title h3{
+    color: hsl(0, 0%, 100%);
     cursor: pointer;
 }
 
-.news-feature-world-title h4:hover{
+.news.black .news-title:hover{
     color: hsl(0, 3%, 66%);
 }
 
-.news-feature-world-author span{
-    color: white;
+.news.black .news-author {
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.news.black .news-author span{
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 100%);
+}
+
+
+.news.red{
+    background-color: hsl(0, 100%, 40%);
+}
+
+.news.red .news-image{
+    cursor: pointer;
+}
+
+.news.red .news-category span{
+    color: hsl(0, 6%, 61%);
     padding: 0.5rem;
     font-size: 0.8rem;
     cursor: pointer;
 }
 
+.news.red .news-title h4{
+    color: hsl(0, 0%, 100%);
+    padding: 0.5rem;
+    cursor: pointer;
+}
 
+.news.red .news-title h4:hover{
+    color: hsl(0, 3%, 66%);
+}
+
+.news.red .news-author span{
+    color: hsl(0, 0%, 100%);
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
